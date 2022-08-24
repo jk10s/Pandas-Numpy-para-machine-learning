@@ -1,0 +1,8 @@
+import sqlite3
+conexion= sqlite3.conect('nombrebd')
+cursor = conexion.cursor()
+cursor.execute('sentencias sql') // tanto crear, insertar modificar consultar o eliminar
+conexion.commit() // aplicar cambios
+conexion.close() // para cerrar conexion
+
+
